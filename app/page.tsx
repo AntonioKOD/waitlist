@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Gem, MapPin, PartyPopper, Utensils } from "lucide-react"
+import { MapPin, PartyPopper, Utensils } from "lucide-react"
 import Link from "next/link"
 import logo from '@/public/grounded-gems-logo 2.svg'
 import Image from "next/image"
@@ -165,8 +165,7 @@ export default function WaitlistPage() {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between md:flex-row">
             <div className="flex items-center">
-              <Gem className="h-6 w-6 text-primary" />
-              <span className="ml-2 text-lg font-bold text-secondary">Grounded Gems</span>
+             <Image src={logo} alt="Grounded Gems Logo" width={60} height={60} />
             </div>
             <p className="mt-4 text-center text-sm text-muted-foreground md:mt-0">
               &copy; {new Date().getFullYear()} Grounded Gems. All rights reserved.
